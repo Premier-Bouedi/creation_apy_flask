@@ -8,13 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>{{ title }} de moi</h1>
-        <p>Je suis un développeur web passionné par le digital et les nouvelles technologies.</p>
+        <h1>{{ title }}</h1>
+        <p>Voici une sélection de titres qui m'ont particulièrement marqué :</p>
+        
+        <ul class="games-list">
+            {% for game in games %}
+            <li class="game-item">{{ game }}</li>
+            {% endfor %}
+        </ul>
+
         <div class="nav-links">
             <a href="/" class="btn btn-secondary">Retour à l'accueil</a>
-            <a href="/games" class="btn">Voir les Jeux</a>
         </div>
-        <footer>Fait par clainn et Flask</footer>
+        <footer>Exploration vidéoludique avec Flask</footer>
     </div>
 </body>
 </html>

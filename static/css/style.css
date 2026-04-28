@@ -96,6 +96,38 @@ p {
     border-color: var(--text-secondary);
 }
 
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.games-list {
+    list-style: none;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.game-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+    cursor: default;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.game-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(10px);
+    border-color: var(--accent);
+}
+
 footer {
     margin-top: 2rem;
     font-size: 0.8rem;
