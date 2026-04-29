@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Ma Première App Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <h2>Oups ! Page introuvable</h2>
+        <p>Il semble que l'URL que vous recherchez n'existe pas ou a été déplacée.</p>
+        
+        <div class="nav-links">
+            <a href="/" class="btn">Retourner à l'accueil</a>
+        </div>
+        <footer>Erreur gérée avec élégance par Flask</footer>
+    </div>
+</body>
+</html>
